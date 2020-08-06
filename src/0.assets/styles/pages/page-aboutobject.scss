@@ -1,0 +1,38 @@
+.page__aboutobject {
+  @extend %page;
+
+  &_title {
+    @extend %page__title;
+    @media(min-width: 48rem) {
+      width: 42rem;
+    }
+
+    &--principal {
+      @extend %page__title_principal;
+    }
+
+    &--secondary {
+      @extend %page__title_secondary;
+
+      .object__block {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &_background {
+    @extend %page__background;
+    height: 40%;
+    opacity: .5;
+    @media (min-width: 48rem) {
+      height: 100%;
+      opacity: 1;
+    }
+    &--image {
+    }
+  }
+
+  &_navigate {
+    @extend %page__navigate;
+  }
+}

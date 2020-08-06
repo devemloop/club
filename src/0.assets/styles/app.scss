@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+
+  &,
+  &:after,
+  &:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(#d50000, .125);
+    border: 1px solid #d50000;
+    border-radius: .5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+}
+
+html {
+  background: #1a1a1a;
+}
+
+html,
+body,
+.app {
+  display: flex;
+  flex-direction: column;
+  color: #e6e6e6;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Questrial', sans-serif, arial, helvetia;
+  font-size: 16px;
+}
+
+img,
+svg {
+  height: 100%;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@import './helpers/helpers';
+@import './components/components';
+@import './pages/pages';
